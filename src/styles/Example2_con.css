@@ -1,12 +1,26 @@
 
 .seccion_con{
     background-color: #9ce672;
-	width: auto;
+	width: 50%;
 	height: auto;
 	padding: 10px;
 	border-radius: 10px;
 	border: 1px dashed
 }
+
+.direcciones_justify .seccion_con{
+    width: 48%;
+    min-width: 320px;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+
 /*Usando Flex*/
 /*acomodando en fila*/
 #items_con{
@@ -19,3 +33,208 @@
 	min-width: 30%;
     border: 1px solid;
 }
+
+/*
+    para los espacios entre componentes usando gap
+*/
+#itemsg_con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#itemg_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+
+/*
+    posiciones de los componentes en fila
+*/
+
+#itemsr_con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#itemr_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/*
+    posiciones de los componentes en columna
+*/
+
+#itemsc_con{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#itemc_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/*
+    posicion fila invertida
+*/
+#itemsrr_con{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#itemrr_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/*
+    posicion columna invertida
+*/
+
+#itemscc_con{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#itemcc_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/*
+    desborde de los componente
+*/
+
+#wrap_sin{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    padding: 10px;
+    width: 50%;
+    background-color: aliceblue;
+}
+#itemws_sin{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/*ajuste de desbordamiento*/
+#wrap_con{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    padding: 10px;
+    width: 50%;
+    background-color: rgb(126, 233, 119);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#itemwc_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+
+/* flex flow*/
+
+#flow{
+    display: flex;
+    border: 2px solid;
+    padding: 10px;
+    width: 50%;
+    background-color: rgb(126, 233, 119);
+    gap: 20px;
+    flex-flow: row wrap-reverse;
+}
+#itemf{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}
+
+/* justify-content */
+
+#itemsjc_start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemsjc_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemsjc_end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemsjc_between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemsjc_around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemsjc_evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px dashed #2f6c2f;
+    background-color: #d7f7d0;
+    padding: 8px;
+    width: 100%;
+    max-width: 320px;
+}
+#itemjc{
+    background-color: #25ebeb;
+    min-width: 60px;
+    border: 1px solid;
+}
+
+
