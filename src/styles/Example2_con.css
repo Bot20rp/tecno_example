@@ -1,0 +1,21 @@
+
+.seccion_con{
+    background-color: #9ce672;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px dashed
+}
+/*Usando Flex*/
+/*acomodando en fila*/
+#items_con{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#item_con{
+    background-color: #25ebeb;
+	min-width: 30%;
+    border: 1px solid;
+}

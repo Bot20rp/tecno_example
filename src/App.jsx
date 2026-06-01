@@ -40,7 +40,7 @@ const Home = () => {
 
 const App = () => {
   return (
-    <div className="contenedor">
+    <div className="contenedor2">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ejemplojdr" element={<EjemploJdr />} />

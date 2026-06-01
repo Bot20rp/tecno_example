@@ -1,0 +1,64 @@
+.contenedor-principal {
+	font-family: Inter,	system-ui, 	-apple-system, 'Segoe UI', Roboto,'Helvetica Neue', Arial;
+	padding: 20px; 
+	height: 100vh;
+	width: 100%; 
+	margin: 0px; 
+	background-color: #05ffbc;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.seccion_principal{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	justify-content: space-between;
+}
+
+/*
+	Lineas de codigo con css nativo
+*/
+
+
+/*
+	Sin usar Flex
+*/
+.seccion_sin{
+	background-color: #b7b1b1;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px dashed
+}
+/*
+	para que lo item puedan formarse en fila
+*/
+#item1{
+	background-color: rgb(20, 225, 204);
+	width: 30%;
+	float: left;
+	border: 1px solid;
+}#item2{
+	background-color: rgb(20, 225, 204);
+	min-width: 30%;
+	float: left;
+	border: 1px solid;
+}#item3{
+	background-color: rgb(20, 225, 204);
+	width: 30%;
+	float: left;
+	border: 1px solid;
+}#item4{
+	background-color: rgb(20, 225, 204);
+	width: 30%;
+	float: left;
+	border: 1px solid;
+}#item5{
+	background-color: rgb(20, 225, 204);
+	width: 30%;
+	float: left;
+	border: 1px solid;
+}
+
