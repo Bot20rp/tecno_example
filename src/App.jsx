@@ -1,7 +1,6 @@
 
 import './App.css'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import EjemploDr from './pages/EjemploDr.jsx'
 import EjemploJdr from './pages/EjemploJdr.jsx'
 import Example_2 from './pages/Example2.jsx'
 

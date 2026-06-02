@@ -1,34 +1,105 @@
 .jdr-page{
 	display: flex;
 	flex-direction: column;
-    gap: 16px;
+	gap: 16px;
+	padding: 16px;
+}
+
+.jdr-row{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.jdr-card{
+	width: 340px;
+	max-width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px dashed;
+}
+
+
+.jdr-card--sin{
+	background-color: #b7b1b1;
+}
+
+.jdr-card--con{
+	background-color: #9ce672;
 }
 
 .jdr-container{
-	display: flex;
-	width: 300px;
+	width: 100%;
+	max-width: 320px;
 	min-height: 260px;
 	padding: 12px;
 	border: 2px dashed #3d5afe;
 	background: #f2f5ff;
 }
-.jdr-container-align-items{
+
+.jdr-container--con{
+	display: flex;
+}
+
+.jdr-container--sin{
+	display: block;
+	overflow: hidden;
+}
+
+.jdr-container--sin .jdr-box{
+	float: left;
+	margin: 6px;
+}
+
+/* align-items */
+.jdr-container-align-items-start{
+	align-items: flex-start;
+}
+
+.jdr-container-align-items-end{
 	align-items: flex-end;
 }
 
+/* align-content */
+.jdr-container-align-content-center,
+.jdr-container-align-content-between{
+	flex-wrap: wrap;
+}
 
-.jdr-container-align-content{
-    flex-wrap: wrap; /* o wrap-reverse */
+.jdr-container-align-content-center{
 	align-content: center;
 }
 
-.jdr-container-row-gap{
-    flex-wrap: wrap; /* o wrap-reverse */
-	row-gap: 100px;
+.jdr-container-align-content-between{
+	align-content: space-between;
 }
 
-.jdr-container-column-gap{
-	column-gap: 10px;
+/* row-gap */
+.jdr-container-row-gap-0,
+.jdr-container-row-gap-40{
+	flex-wrap: wrap;
+}
+
+.jdr-container-row-gap-0{
+	row-gap: 0;
+}
+
+.jdr-container-row-gap-40{
+	row-gap: 40px;
+}
+
+/* column-gap */
+.jdr-container-column-gap-0,
+.jdr-container-column-gap-20{
+	flex-wrap: wrap;
+}
+
+.jdr-container-column-gap-0{
+	column-gap: 0;
+}
+
+.jdr-container-column-gap-20{
+	column-gap: 20px;
 }
 
 .jdr-box{
@@ -45,23 +116,27 @@
 
 /*ORDER*/
 .jdr-order-1{
-	order: 0;
+	order: 3;
 }
 .jdr-order-2{
-	order: 0;
+	order: 1;
 }
 .jdr-order-3{
-    order: 0;
+	order: 2;
 }
 
 /*FLEX-GROW*/
 /* para crecer*/
-
 .jdr-container-flex-grow .jdr-box{
-    flex-grow: 1;
+	flex-grow: 0;
 }
+
 .jdr-container-flex-grow .jdr-grow-1{
-    flex-grow: 1;
+	flex-grow: 1;
+}
+
+.jdr-container-flex-grow .jdr-grow-2{
+	flex-grow: 2;
 }
 
 /*FLEX-SHRINK*/
@@ -94,11 +169,11 @@
 /*flex*/
 /*flex-grow, flex-shrinky flex-basiscombinados*/
 .jdr-flex-1{
-	flex: 0 0 auto;
+	flex: 1 1 0;
 }
 
 .jdr-flex-2{
-	flex: 0 0 auto;
+	flex: 2 1 0;
 }
 
 .jdr-flex-0{
