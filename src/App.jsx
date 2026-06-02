@@ -19,13 +19,7 @@ const Home = () => {
         >
           Ejemplo JDR
         </button>
-        <button
-          type="button"
-          className="btn"
-          onClick={() => navigate('/ejemplodr')}
-        >
-          Ejemplo DR
-        </button>
+    
         <button
           type="button"
           className="btn"
@@ -44,8 +38,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ejemplojdr" element={<EjemploJdr />} />
-        <Route path="/ejemplodr" element={<EjemploDr />} />
-        <Route path="/example2" element={<Example_2 />} />
+          <Route path="/example2" element={<Example_2 />} />
       </Routes>
     </div>
   )
